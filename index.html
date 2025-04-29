@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Example</title>
+  
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-black">
+  
+  <header class="md:m-[2rem] m-6 p-[2rem] h-[90vh] rounded-md bg-gray-700 bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat text-white">
+    <nav class="flex justify-between items-center">
+      <div class="flex items-center gap-8">
+        <img src="/images/logo.png" alt="logo" class="md:h-12 h-10 md:w-40 w-32"/>
+        <ul class="lg:flex items-center gap-4 hidden">
+          <li>Products</li>
+          <li>Solutions</li>
+          <li>Resources</li>
+          <li>Pricing</li>
+        </ul>
+      </div>
+
+      <div class="lg:flex hidden items-center gap-4">
+        <button>Watch Demo</button>
+        <button class="bg-[#D2F70C] px-6 py-2 text-black rounded-full">Sign Up</button>
+      </div>
+      <div class="lg:hidden block">
+        <i data-lucide="menu"></i>
+      </div>
+    </nav>
+
+    <section class="md:pt-[6rem] pt-[10rem]">
+        <h1 class="lg:text-7xl md:text-5xl text-4xl md:w-[60%]">All-In-One<br/><span class="text-[#D2F70C] font-bold">Review Management OS</span><br/>For Your Business</h1>
+    </section>
+  </header>
+
+  <div class="flex flex-col gap-4 justify-center items-center pt-[6rem]">
+    <h1 class="flex gap-2 md:text-4xl text-3xl items-center font-medium">Join
+        <img src="/images/c1.png" alt="c1" class="w-20 h-7"/>
+        50+ Customers
+    </h1>
+    <p class="md:w-[40%] text-center md:text-4xl text-2xl text-[#244445]">To unlock business Growth with your customer reviews & loyalty</p>
+    <div class="flex flex-wrap md:w-[70%] w-[85%] justify-center items-center gap-10 pt-6">
+        <img src="/images/logo1.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo2.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo3.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo1.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo2.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo3.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo1.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo2.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+        <img src="/images/logo3.png" alt="logo" class="md:w-20 w-10 h-4 md:h-8"/>
+    </div>
+  </div>
+
+
+  <!--Marketing Section-->
+  <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] text-white m-6 md:h-[90vh] h-[70vh] bg-[#A5D718] rounded-md flex flex-col justify-between">
+    <div class="flex justify-center items-center flex-col pt-[4rem] gap-6">
+        <h1 class="md:text-4xl text-3xl text-center">Your Customers Are Talking About You Online—</h1>
+        <h1 class="md:text-6xl text-4xl font-bold">Are You Listening?</h1>
+    </div>
+    <img src="/images/Frame 1321314619.png" alt="frame" class="w-full h-auto"/>
+  </section>
+
+  <!--Analytics Section-->
+  <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] m-6">
+    <div class="flex flex-col gap-6">
+        <h1 class="md:text-4xl text-3xl text-center">Reputations.<span class="text-[#0070FC]">Reinvented.</span></h1>
+        <div class="flex w-full justify-center">
+          <p class="p-4 rounded-full bg-[#F8F9FA] text-[#0070FC] font-medium text-sm w-fit">India’s First Multi Location CXM Platform</p>
+        </div>
+        <div class="flex justify-center w-full">
+          <p class="text-center text-[#6D6D6D] md:w-[70%]">Telosa’s AI-driven Reputation OS helps enterprises analyze, respond, and elevate their brand through smart automation, voice-based review collection, and predictive insights.</p>
+        </div>
+    </div>
+    <div class="flex md:flex-row flex-col gap-6 pt-[6rem]">
+      <div class="md:w-[40%] bg-[#FAFAFA] rounded-lg">
+        <div class="flex w-full justify-end pt-[4rem]">
+          <img src="images/s2.png" alt="s" class="w-[70%] h-auto"/>
+        </div>
+        <div class="flex justify-between w-full items-center text-[#0070FC] px-6 pt-10 pb-10">
+          <p>Watch Demo</p>
+          <img src="/images/arrow-up 1.png" alt="arrow" class="size-5"/>
+        </div>
+      </div>
+      <div class="md:w-[50%] flex flex-col gap-6">
+        <div class="flex flex-col rounded-lg shadow-md p-6">
+          <h1 class="text-2xl font-bold">Review Analytics</h1>
+          <p class="text-xs">Track sentiment, analyze trends, and gain insights to improve decisions and customer satisfaction.</p>
+          <div class="rounded-lg bg-[#F8F9FA] p-4 flex gap-2 text-lg mt-[3rem]">
+            <p class="text-[#0070FC]">70%</p>
+            <img src="/images/arrow-up.png" alt="c1" class="size-5"/>
+            <p>Review Response Time</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg p-4 flex items-center bg-[#FAFAFA] justify-between h-20">
+          <h1>Review<br/>Moderation</h1>
+          <p class="w-[70%] text-xs">Manage and respond to reviews in one place to improve satisfaction and build credibility.</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-center bg-[#FAFAFA] justify-between h-20">
+          <h1>Review<br/>Moderation</h1>
+          <p class="w-[70%] text-xs">Manage and respond to reviews in one place to improve satisfaction and build credibility.</p>
+        </div>
+        <div class="rounded-lg p-4 flex items-center bg-[#FAFAFA] justify-between h-20">
+          <h1>Review<br/>Moderation</h1>
+          <p class="w-[70%] text-xs">Manage and respond to reviews in one place to improve satisfaction and build credibility.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+  <!--Special Offer Section-->
+  <section class="md:pl-[6rem] md:pr-[6rem] md:pb-[6rem] pt-[6rem] p-6 bg-gradient-to-b from-[#f5f7fc] to-[#f6faf0]">
+    <div class="flex flex-col gap-6 justify-center items-center">
+        <h1 class="md:text-4xl text-3xl text-center md:w-[50%] ">ALL-In-One<span class="text-[#0070FC]"> Review Management OS</span> For For Business</h1>
+    </div>
+
+    <div class="flex flex-col gap-10">
+      <div class="flex gap-10 md:flex-row flex-col pt-[6rem]">
+        <div class="flex flex-col rounded-lg shadow-md p-6 md:w-[50%] md:h-auto h-[25rem] bg-white">
+          <div class="flex flex-col gap-4 justify-center">
+            <h1 class="md:text-4xl text-3xl md:w-[50%] ">AI Driven CX<span class="text-[#0070FC]">OS</span></h1>
+            <p class="text-sm">
+              Build to engage and utilize your customer for your business growth
+            </p>
+            <div class="flex gap-4 text-sm">
+              <p class="border-r-[1px] border-[#0070FC] pr-4">Scalability</p>
+              <p class="border-r-[1px] border-[#0070FC] pr-4">Accuracy</p>
+              <p>Data Security</p>
+            </div>
+        </div>
+
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 md:w-[50%]">
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">AI Powered Review Monitoring</h1>
+            <p class="text-[#838696] text-sm">Scan, categorize & prioritize feedback in real-time.</p>
+          </div>
+          <div>
+            <img src="/images/mock1.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Voice- Based Review Collection</h1>
+            <p class="text-[#838696] text-sm">Scan, categorize & prioritize feedback in real-time.</p>
+          </div>
+          <div>
+            <img src="/images/mock2.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Automated Responses with templates</h1>
+            <p class="text-[#838696] text-sm">AI-Generated, context aware replies to boost customer engagement.</p>
+          </div>
+          <div>
+            <img src="/images/mock3.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Sentiment analysis & trends</h1>
+            <p class="text-[#838696] text-sm">Gain deep insights into customer emotions & improve satisfaction</p>
+          </div>
+          <div>
+            <img src="/images/mock1.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-10 ">
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Multi platform management</h1>
+            <p class="text-[#838696] text-sm">Manage Google, Facebpok, Trustpilot, Yelp & more reviews</p>
+          </div>
+          <div>
+            <img src="/images/mock4.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Review Promotions and Showcase</h1>
+            <p class="text-[#838696] text-sm">Data encryption, compliance- ready & secure access</p>
+          </div>
+          <div>
+            <img src="/images/mock5.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Multi Location with Analytics & tracking</h1>
+            <p class="text-[#838696] text-sm">AI-Generated, context aware replies to boost customer engagement.</p>
+          </div>
+          <div>
+            <img src="/images/mock6.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md p-6 flex flex-col gap-6 bg-white">
+          <div class="flex flex-col gap-4">
+            <h1 class="md:text-2xl text-xl">Enterprise - Grade Security</h1>
+            <p class="text-[#838696] text-sm">Data encryption, compliance- ready & secure access</p>
+          </div>
+          <div>
+            <img src="/images/mock7.png" alt="mock" class="w-full h-auto"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+
+
+
+  <!---Scorecard Section-->
+  <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] m-6">
+    <div class="flex flex-col gap-6">
+        <h1 class="md:text-4xl text-3xl text-center"><span class="text-[#0070FC]">Maximize</span> Your Impact</h1>
+        <p class="text-center text-[#6D6D6D]">Connect Telosa with Google, Yelp, Facebook, and more. Track, respond, and analyze reviews effortlessly. Leverage AI insights to improve ratings, enhance customer experience, and boost your brand reputation—all in one place.</p>
+    </div>
+    <div class="lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid gap-6 pt-[4rem] place-items-center">
+        <div class="size-[20rem] bg-[#EEEEEE] rounded-lg flex flex-col justify-between p-6">
+            <h1 class="text-5xl underline decoration-[#A5D718]">35%</h1>
+            <p class="text-[#5C5F6E]">Increase in customer ratings</p>
+        </div>
+        <div class="size-[20rem] bg-[#EEEEEE] rounded-lg flex flex-col justify-between p-6">
+            <h1 class="text-5xl underline decoration-[#096FFE]">70%</h1>
+            <p class="text-[#5C5F6E]">Faster review response time</p>
+        </div>
+        <div class="size-[20rem] bg-[#EEEEEE] rounded-lg flex flex-col justify-between p-6">
+            <h1 class="text-5xl underline decoration-[#A5D718]">5x</h1>
+            <p class="text-[#5C5F6E]">More customer engagement</p>
+        </div>
+        <div class="size-[20rem] bg-[#EEEEEE] rounded-lg flex flex-col justify-between p-6">
+            <h1 class="text-5xl underline decoration-[#096FFE]">90%</h1>
+            <p class="text-[#5C5F6E]">Reduction in missed critical feedback</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!--Industry Section-->
+  <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] m-6">
+    <div class="flex flex-col gap-6">
+        <h1 class="md:text-4xl text-3xl text-center">Built <span class="text-[#0070FC]">For All</span>Industries</h1>
+        <p class="text-center text-[#6D6D6D]"> Leverage AI insights to improve ratings, enhance customer experience, and boost your brand reputation—all in one place.</p>
+        <div class="flex gap-6 md:flex-nowrap flex-wrap justify-center">
+          <button class="rounded-full px-6 py-3 bg-neutral-700 text-white text-sm">Healthcare</button>
+          <button class="rounded-full px-6 py-3 border-[1px] border-black text-sm">Finance</button>
+          <button class="rounded-full px-6 py-3 border-[1px] border-black text-sm">Reyail</button>
+          <button class="rounded-full px-6 py-3 border-[1px] border-black text-sm">Auto</button>
+          <button class="rounded-full px-6 py-3 border-[1px] border-black text-sm">Self Storage</button>
+        </div>
+    </div>   
+    <div>
+      <div>
+        <img src="/images/industry.png" alt="industry" class="w-full h-auto mt-[6rem]"/>
+      </div>
+    </div> 
+  </section>
+
+
+  <!--Integrations Section-->
+  <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] m-6">
+    <div class="flex flex-col gap-6">
+        <h1 class="md:text-4xl text-3xl text-center">Seamless Integrations, <span class="text-[#0070FC]">Maximize Impact</span> </h1>
+        <p class="text-center text-[#6D6D6D]">
+            Connect Telosa with Google, Yelp, Facebook, and more. Track, respond, and analyze reviews effortlessly. Leverage AI insights to improve ratings, enhance customer experience, and boost your brand reputation—all in one place.        </p>
+    </div>
+    <div class="flex gap-6 md:flex-nowrap flex-wrap">
+        <div>
+            <img src="/images/i1.png" alt="img" class="md:size-44 size-32" />
+        </div>
+        <div>
+            <img src="/images/i2.png" alt="img" class="md:size-44 size-32 md:pt-10" />
+        </div>
+        <div>
+            <img src="/images/i3.png" alt="img" class="md:size-44 size-32" />
+        </div>
+        <div>
+            <img src="/images/i4.png" alt="img" class="md:size-44 size-32 md:pt-10" />
+        </div>
+        <div>
+            <img src="/images/i5.png" alt="img" class="md:size-44 size-32" />
+        </div>
+        <div>
+            <img src="/images/i6.png" alt="img" class="md:size-44 size-32 md:pt-10" />
+        </div>
+        <div>
+            <img src="/images/i7.png" alt="img" class="md:size-44 size-32" />
+        </div>
+    </div>
+    </section>
+
+    <!-- Testimonials Section-->
+    <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] m-6">
+      <div class="flex flex-col gap-6">
+          <h1 class="md:text-4xl text-3xl text-center">Hear From Businesses<span class="text-[#0070FC]"> Like Yours</span></h1>
+          <p class="text-center text-[#6D6D6D]">
+            Our customers love what we do. Here’s why-</p>
+      </div>
+
+      <div class="flex md:flex-row flex-col gap-6 justify-betweem items-center pt-[6rem]">
+        <div class="w-[80%] rounded-lg bg-[#FAFAFA] flex flex-col justify-between md:gap-0 gap-10 md:h-[18rem] p-6">
+          <p class="text-[#101720] text-lg">An excellent product for the agencies to upsell to their customers. As an agency, we can understand so much more from the feedback of customers and pinpoint what to increase and what to improve all in one place.</p>
+          <div class="flex justify-end">
+            <div>
+              <img src="/images/zapier.png" alt="zap" class="w-20 h-auto"/>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-[20%] w-[80%] rounded-lg bg-[#FAFAFA] flex flex-col justify-between items-center md:h-[18rem] p-6">
+          <div class="flex items-center flex-col gap-2">
+            <img src="/images/s1.png" alt="s" class="size-20"/>
+            <h1 class="font-bold">Naveeni Gave</h1>
+            <p class="text-[#8E8E8E] text-xs">SVP of Products at Zapier</p>
+          </div>
+          <div class="flex justify-between w-full">
+            <img src="/images/arrow-left.png" alt="arrow" class="size-5"/>
+            <img src="/images/arrow-right.png" alt="arrow" class="size-5"/>
+
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+
+      <!--  Blog Section-->
+      <section class="md:ml-[6rem] md:mr-[6rem] md:mb-[6rem] mt-[6rem] m-6">
+        <div class="flex flex-col gap-6">
+            <h1 class="md:text-4xl text-3xl text-center">Blogs<span class="text-[#0070FC]">&</span>Articles</h1>
+            <p class="text-center text-[#6D6D6D]">
+              Insights, tips, and success stories to help you master online selling and grow your business.    </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 grid-cols-1 gap-6 pt-[6rem]">
+          <div class="rounded-lg p-6 border-[1px] flex flex-col gap-6">
+            <div>
+              <img src="/images/blog1.png" alt="blog" class="w-full h-auto"/>
+            </div>
+            <h1 class="font-semibold text-lg">
+              A Milestone Birthday and a Lesson in Online Reviews: Navigating the Digital Age of Hospitality
+            </h1>
+            <div class="flex gap-2 text-[#838696] text-xs">
+              <p class="border-r-[1px]">2 min read</p>
+              <p class="border-r-[1px]">Author name</p>
+              <p >00/00/00</p>
+            </div>
+          </div>
+          <div class="rounded-lg p-6 border-[1px] flex flex-col gap-6">
+            <div>
+              <img src="/images/blod2.png" alt="blog" class="w-full h-auto"/>
+            </div>
+            <h1 class="font-semibold text-lg">
+              From Fine Dining to Five Stars: A Strategic Guide to Boosting Online Reviews
+            </h1>
+            <div class="flex gap-2 text-[#838696] text-xs">
+              <p class="border-r-[1px]">7 min read</p>
+              <p class="border-r-[1px]">Author name</p>
+              <p >00/00/00</p>
+            </div>
+          </div>
+          <div class="rounded-lg p-6 border-[1px] flex flex-col gap-6">
+            <div>
+              <img src="/images/blog1.png" alt="blog" class="w-full h-auto"/>
+            </div>
+            <h1 class="font-semibold text-lg">
+              A Milestone Birthday and a Lesson in Online Reviews: Navigating the Digital Age of Hospitality
+            </h1>
+            <div class="flex gap-2 text-[#838696] text-xs">
+              <p class="border-r-[1px]">2 min read</p>
+              <p class="border-r-[1px]">Author name</p>
+              <p >00/00/00</p>
+            </div>
+          </div>
+          <div class="rounded-lg p-6 border-[1px] flex flex-col gap-6">
+            <div>
+              <img src="/images/blog1.png" alt="blog" class="w-full h-auto"/>
+            </div>
+            <h1 class="font-semibold text-lg">
+              A Milestone Birthday and a Lesson in Online Reviews: Navigating the Digital Age of Hospitality
+            </h1>
+            <div class="flex gap-2 text-[#838696] text-xs">
+              <p class="border-r-[1px]">2 min read</p>
+              <p class="border-r-[1px]">Author name</p>
+              <p >00/00/00</p>
+            </div>
+          </div>
+        </div>
+        </section>
+
+
+
+      <!-- Footer Section-->
+      <footer class="bg-[#222222] md:h-[80vh] h-[150vh] rounded-t-lg relative mt-[20rem]">
+        <div class="absolute inset-0 overflow-visible">
+          <!-- <img src="/images/ellipse.png" alt="ellipse" class="absolute top-12"> -->
+          <!-- <img src="/images/ellipse.png" alt="ellipse" class="absolute right-20 bottom-[-20rem]"> -->
+          <div class="bg-[#A5D718] absolute text-white h-auto p-[3rem] flex md:flex-row flex-col justify-between rounded-lg w-[90%] left-1/2 transform -translate-x-1/2 top-[-10rem]">
+            <div class="flex flex-col gap-6">
+                <h1 class="md:text-5xl text-3xl">Telosa Help You Increase Your</h1>
+                <h1 class="md:text-5xl text-3xl font-bold">Revenues every month!</h1>
+                <div>
+                  <button class="rounded-full border-[1px] text-sm px-6 py-2">Request a Demo</button>
+                </div>
+            </div>
+            <div class="md:pt-[6rem] pt-6 relative">
+              <img src="/images/g2.png" alt="g" class="md:w-32 w-24 h-auto absolute right-6 md:top-44 top-24 z-10"/>
+              <img src="/images/g3.png" alt="g" class="w-16 h-auto absolute right-32"/>
+              <img src="/images/g1.png" alt="g" class="md:w-96 w-80 h-auto relative"/>
+            </div>
+          </div>
+
+          <div class="md:pt-[14rem] pt-[20rem] md:px-[5rem] px-10 text-white flex md:flex-row flex-col items-start justify-between">
+            <div class="flex flex-col gap-10 md:w-[15%] w-[60%]">
+              <div>
+                <img src="/images/logo.png" alt="logo" class="w-40 h-auto">
+              </div>
+              <p class=" text-[#FFFFFF]">Be sure to take a look at our Terms of Use and Privacy Policy</p>
+              <div class="flex justify-between items-center w-[70%]">
+                <div>
+                  <img src="/images/twitter.png" alt="t" class="w-5 h-auto"/>
+                </div>
+                <div>
+                  <img src="/images/facebook.png" alt="t" class="w-5 h-auto"/>
+                </div>
+                <div>
+                  <img src="/images/google.png" alt="t" class="w-5 h-auto"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-4 grid-cols-2 justify-between w-full md:w-auto gap-[4rem] md:pt-0 pt-[4rem]">
+              <div class="flex flex-col gap-10">
+                <h1 class="text-lg font-medium">Features</h1>
+                <div class="flex flex-col gap-4 text-sm text-[#FFFFFF]">
+                  <p>Features</p>
+                  <p>Pricing</p>
+                  <p>Tour</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-10">
+                <h1 class="text-lg font-medium">Solutions</h1>
+                <div class="flex flex-col gap-4 text-sm text-[#FFFFFF]">
+                  <p>Our Portfolio</p>
+                  <p>Latest Work</p>
+                  <p>Brands</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-10">
+                <h1 class="text-lg font-medium">Company</h1>
+                <div class="flex flex-col gap-4 text-sm text-[#FFFFFF]">
+                  <p>Privacy</p>
+                  <p>Support</p>
+                  <p>Help Desk</p>
+                  <p>FAQ</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-10">
+                <h1 class="text-lg font-medium">English</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute bottom-0 md:px-[5rem] px-6 py-3 border-t-[1px] border-[#5F5F5F] w-full text-white text-xs">
+            Copyright & Compliance @ 2025 Telosa.All right reserved          </div>
+        </div>
+      </footer>
+
+   <!-- Initialize Lucide icons -->
+   <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
